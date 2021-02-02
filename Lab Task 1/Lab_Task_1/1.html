@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h6 style="background-color: LightGray">
+  <span style="color: red;">*</span><span> - Denotes Required Information</span><br><br>
+  <span>> 1 Donation </span>
+  <span>> 2 Confirmation </span>
+  <span>> Thank You! </span>
+  <form action="/donation_page.php">
+  <h3 style="color: red;">Donor Information</h1>
+  <label for="fname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;First Name<span style="color: red;">*</span></label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;Last Name<span style="color: red;">*</span></label>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="comname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Company</label>
+  <input type="text" id="comname" name="comname"><br>
+  <label for="addname1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Address 1<span style="color: red;">*</span></label>
+  <input type="text" id="addname1" name="addname1"><br>
+  <label for="addname2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Address 2</label>
+  <input type="text" id="addname2" name="addname2"><br>
+  <label for="cname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;City<span style="color: red;">*</span></label>
+  <input type="text" id="cname" name="cname"><br>
+  <label for="sname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;State<span style="color: red;">*</span></label>
+  <select id="State" name="State">
+    <option value="state1">State1</option>
+    <option value="state2">State2</option>
+    <option value="state3">State3</option>
+    <option value="state4">State4</option>
+  </select><br>
+  <label for="znum">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Zip Code<span style="color: red;">*</span></label>
+  <input type="number" id="znum" name="znum"><br>
+  <label for="counname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Country<span style="color: red;">*</span></label>
+  <select id="Country" name="Country">
+    <option value="country1">Country1</option>
+    <option value="country2">Country2</option>
+    <option value="country3">Country3</option>
+    <option value="country4">Country4</option>
+  </select><br>
+  <label for="phnum">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Phone</label>
+  <input type="number" id="phnum" name="phnum"><br>
+  <label for="fxnum">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;Fax</label>
+  <input type="number" id="fxnum" name="fxnum"><br>
+  <label for="ename">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email<span style="color: red;">*</span></label>
+  <input type="email" id="ename" name="ename"><br>
+  <label for="donamt">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Donation Amount<span style="color: red;">*</span></label>
+  <input type="radio" id="amt1" name="amount">
+  <label for="amt1">None</label>
+  <input type="radio" id="amt2" name="amount">
+  <label for="amt2">$50</label>
+  <input type="radio" id="amt3" name="amount">
+  <label for="amt3">$75</label>
+  <input type="radio" id="amt4" name="amount">
+  <label for="amt4">$100</label>
+  <input type="radio" id="amt5" name="amount">
+  <label for="amt5">$250</label>
+  <input type="radio" id="amt6" name="amount">
+  <label for="amt6">Other</label><br>
+  <span>&emsp;&emsp;&emsp;(Check a button or type in your amount)</span>
+  <label for="amt6">Other Amount $</label>
+  <input type="number" id="amt6" name="amount"><br>
+  <label for="donamt">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Recurring Donation</label>
+  <input type="checkbox" id="yes" name="yes">
+  <label for=>I am interested in giving on a regular basis.</label><br>
+  <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Check if yes)</span><br>
+  <label for="card">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Monthly Credit Card $</label>
+  <input type="number" id="card" name="card">
+  <label for="month">For</label>
+  <input type="number" id="month" name="month"> <span>Months</span>
+
+  <h3 style="color: red;">Honorium and Memorial Donation Information</h1>
+  <label for="dona">&emsp;&emsp;&emsp;I would like to make this donation</label>
+  <input type="radio" id="dona1" name="donation">
+  <label for="dona1">To Honor</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+  <input type="radio" id="dona2" name="donation">
+  <label for="dona2">In Memory Of</label><br>
+  <label for="donaname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Name</label>
+  <input type="text" id="donaname" name="donaname"><br>
+  <label for="donato">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Acknowledge Donation To</label>
+  <input type="text" id="donato" name="donato"><br>
+  <label for="donaadd">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Address</label>
+  <input type="text" id="donaadd" name="donaadd"><br>
+  <label for="donacity">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;City</label>
+  <input type="text" id="donacity" name="donacity"><br>
+  <label for="donasname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;State</label>
+  <select id="donasname" name="donasname">
+    <option value="donasname1">State1</option>
+    <option value="donasname2">State2</option>
+    <option value="donasname3">State3</option>
+    <option value="donasname4">State4</option>
+  </select><br>
+  <label for="donaznum">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Zip</label>
+  <input type="number" id="donaznum" name="donaznum"><br>
+  
+  <h3 style="color: red;">Additional Information</h1>
+  <span>(Please enter your name, company or organization as you would like it to appear in our publications:</span><br>
+  <label for="exname">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Name</label>
+  <input type="text" id="exname" name="exname"><br>
+  <input type="checkbox" id="ex1" name="ex1">
+  <label for=>I would like my gift remain anonymous.</label><br>
+  <input type="checkbox" id="ex2" name="ex2">
+  <label for=>My employer offers a matching program. I will mail the matching gift form.</label><br>
+  <input type="checkbox" id="ex3" name="ex3">
+  <label for=>Please save the cost of acknowledging this gift by not making a thank you letter.</label><br>
+  <label for="comm">Comments</label><br>
+  <span>(Please type any question or feedback here)</span>
+  <textarea name="message" rows="10" cols="30"></textarea><br>
+  <label for="contact">&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&emsp;How may we contact you?</label>
+  <input type="checkbox" id="contact1" name="contact1">
+  <label for=>E-mail</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" id="contact2" name="contact2">
+  <label for=>Postal Mail</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" id="contact3" name="contact3">
+  <label for=>Telephone</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" id="contact4" name="contact4">
+  <label for=>Fax</label><br>
+  <label for="info">I would like to recieve newsletters and information about special events by:</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" id="info1" name="info1">
+  <label for=>E-mail</label><br>&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" id="info2" name="info2">
+  <label for=>Postal Mail</label><br>
+  <input type="checkbox" id="vol" name="vol">
+  <label for=>I would like information about volunteering with the</label><br>
+  <textarea name="message" rows="1" cols="100"></textarea><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="reset">
+  <input type="submit" value="Submit">
+  <p>&#128274; Donate online with confidence. You are on a secure server.</p>
+  <p>If you have any problems or questions, please contact <a href="https://www.google.com/search?q=support&oq=support&aqs=chrome..69i57j0i67j0i395l4j0i395i433j0i395l2.2538j1j7&sourceid=chrome&ie=UTF-8">support</a></p>
+</form> 
+</body>
+</html>
